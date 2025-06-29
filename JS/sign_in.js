@@ -43,7 +43,7 @@ signInBtn.addEventListener('click', function (e) {
             if (found) {
                 msgInput.innerHTML = `Login is successful`;
                 // go to home page
-                window.location.href = "../home.html";
+                window.location.href = "home.html";
             }
             else if (mail_found) {
                 msgInput.innerHTML = `Login is failed, Incorrect password`; 
