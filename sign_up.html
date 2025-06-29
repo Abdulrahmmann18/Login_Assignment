@@ -12,16 +12,28 @@
     <div class="mx-auto text-center my-5 p-5 box">
         <h1>Smart Login System</h1>
         <div class="mb-4 mt-4">
-            <input type="text" class="form-control p-2 nameInput" id="exampleFormControlInput1"
-                placeholder="Enter your Name">
+            <input type="text" class="form-control p-2 nameInput" id="nameInput" placeholder="Enter your Name">
+            <p class="d-none alert bg-danger py-1 text-light">
+                Your username must be 3-25 characters long, start with a letter (a-z), and can only contain letters,
+                numbers, and one optional symbol (_ - .) in the middle. Examples: 'User123', 'name-test', or
+                'first.last'. Symbols cannot be at the start/end or consecutive.
+            </p>
         </div>
         <div class="mb-4">
-            <input type="email" class="form-control p-2 mailInput" id="exampleFormControlInput1"
-                placeholder="Enter your email">
+            <input type="email" class="form-control p-2 mailInput" id="mailInput" placeholder="Enter your email">
+            <p class="d-none alert bg-danger py-1 text-light">
+                Please enter your email address starting with a letter, containing only letters, numbers, periods (.),
+                underscores (_) or hyphens (-), and ending with @gmail.com or @icloud.com. The username must be 3-20
+                characters long (e.g., john.doe123@gmail.com or jane_smith@icloud.com). Special symbols can't be at the
+                start/end or consecutive.
+            </p>
         </div>
         <div class="mb-4">
-            <input type="password" class="form-control p-2 passInput" id="exampleFormControlInput1"
-                placeholder="Enter your password">
+            <input type="password" class="form-control p-2 passInput" id="passInput" placeholder="Enter your password">
+            <p class="d-none alert bg-danger py-1 text-light">
+                Create a password between 8-20 characters that contains at least one letter, one number, and one special
+                symbol (@, $, !, %, , #, ?, or &). For example: 'Summer@2024' or 'MyPassw0rd!' meets these requirements.
+            </p>
         </div>
         <p class="msg text-danger my-3"></p>
         <button type="button" class="btn btn-outline-primary w-100 signUpBtn">Sign Up</button>

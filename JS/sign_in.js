@@ -2,8 +2,8 @@ var emailInput = document.querySelector('.mailInput');
 var passInput  = document.querySelector('.passInput');
 var signInBtn  = document.querySelector('.signInBtn');
 var msgInput   = document.querySelector('.msg');
- 
 
+ 
 signInBtn.addEventListener('click', function (e) {
 
     var user = {
@@ -43,7 +43,10 @@ signInBtn.addEventListener('click', function (e) {
             if (found) {
                 msgInput.innerHTML = `Login is successful`;
                 // go to home page
-                window.location.href = "home.html";
+                setTimeout(() => {
+                    window.location.href = "home.html";
+                }, 2000); // 2000ms = 2 seconds
+
             }
             else if (mail_found) {
                 msgInput.innerHTML = `Login is failed, Incorrect password`; 
